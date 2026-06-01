@@ -1,4 +1,4 @@
-# RCM Release Notes – March/April 2026
+# RCM Release Notes – May 2026
 
 ![Version](https://img.shields.io/badge/version-v2026.04-blue)
 ![Release Date](https://img.shields.io/badge/release-April%202026-green)
