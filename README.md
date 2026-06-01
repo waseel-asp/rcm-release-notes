@@ -7,51 +7,36 @@
 
 ---
 
-## Summary
-The main focus was on enhancing public sector integrations, improving claims scrubbing capabilities for better accuracy and usability, and expanding auto remarks functionality to support more flexible and accurate workflows.
+RCM Release Notes – May 2026
+
+### Summary
+
+The primary focus during May was enhancing the Oncology workflow and stabilizing the Billing module. Through close collaboration with stakeholders and continuous user feedback, significant improvements were delivered to make billing operations more reliable and efficient. Additional performance optimizations and workflow enhancements were implemented to support a smoother operational experience and improve overall system responsiveness.
 
 ---
 
-## Public Sector Integration
-- Introduced a 360-degree view of patient visits, providing full visibility into insurance, eligibility, pre-authorization, and claim generation for seamless visit tracking
-- Enabled creation of physicians in WRCM based on incoming integration data directly through the RCM UI
-- Enabled viewing and uploading of physician and provider lists directly through the RCM UI
-- Introduced a provider configuration page to simplify public sector providers' integration setup
-- Soft release of KFMC’s evening clinic feature
-- Introduced support for oncology case identification and management within inpatient workflows
+### Oncology
+
+- Enhanced oncology case identification based on department data received through EPIC integration
+- Enabled oncology cases to be processed as inpatient approval cases regardless of visit type (Day-Care, or Emergency)
+- Simplified oncology approval workflows by automatically converting eligible outpatient oncology cases into inpatient approval requests
+- Enabled RCM users (OPs team) to review and submit inpatient approvals directly from the RCM system after validating the default DRG code
 
 ---
 
-## Scrubbing
-- Added a filter on department, patient type (inpatient/outpatient/emergency), and doctor
-- Reduced unnecessary services information from the claim page, showing only non-standard or standard descriptions
-- Reordered services in the claim page
-- Enhanced claims Excel file
-- Added OTD validation for claims
-- Enhanced visibility of linked claim data (same episode number), including services, OTD, technical validation remarks, and doctor’s remarks
+### Billing Transformation
+
+- Focused on enhancing and stabilizing the existing Billing module to ensure it can effectively support day-to-day billing operations
+- Established a continuous feedback cycle with business stakeholders and operational users to identify gaps, validate billing outcomes, and prioritize improvements
+- Delivered multiple functional enhancements based on user feedback, resulting in a more reliable and usable billing experience
+- Streamlined billing workflows by eliminating redundant eligibility and approval revalidation processes
+- Introduced new user interface tabs and workflow enhancements to simplify navigation and improve user productivity
+- Improved billing performance through Redis-based caching, database indexing, and backend workflow optimization, significantly reducing processing delays and eliminating bottlenecks that previously impacted billing operations
+- Continued collaboration with stakeholders to ensure the billing module evolves in alignment with real operational requirements and business needs
 
 ---
 
-## Auto Remarks (Smart Audit)
-- Separated auto remarks into Technical and Medical categories
-- Added flexibility to enable Technical, Medical, or both validations based on customer needs
-- Enhanced batch view to display detailed information for each processed batch
-- Expanded integrations to improve automated remark generation
-- Introduced an endpoint to allow auto remarks utilization by other products
+### Action Required
 
----
-
-## Technical & Platform Updates
-- Released a new version of the Angular-based UI application, upgraded to the latest framework version, and integrated with Keycloak for authentication
-- Currently operating in a dual setup where the legacy application continues to support existing modules, while new modules are being developed and deployed on the upgraded application
-- Introduced a new API gateway integrated with Keycloak, running alongside the existing gateway to ensure backward compatibility during the transition phase
-
----
-
-## Impact
-Improved operational efficiency and audit accuracy through enhanced claims visibility, smarter validations, and automation—enabling faster processing, reduced manual effort, and better control for operations teams and claims auditors.
-
----
-
-## Action Required
 No immediate action is required.
+
