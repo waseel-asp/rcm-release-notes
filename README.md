@@ -7,8 +7,6 @@
 
 ---
 
-# RCM Release Notes – June 2026
-
 ## Summary
 
 ### Claims Preparation and Extraction
